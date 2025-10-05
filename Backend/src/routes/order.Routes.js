@@ -3,7 +3,6 @@ const express = require("express");
 const Cart = require("../models/Cart");
 const authMiddleware = require("../middleware/auth.middleware");
 const razorpay = require("../config/razorpay");
-const { default: items } = require("razorpay/dist/types/items");
 
 const router = express.Router();
 

@@ -1,12 +1,15 @@
-const express = require("express");
+
 const dotenv = require("dotenv");
+dotenv.config();
+const express = require("express");
 const cors = require("cors");
+const razorpay = require("./src/config/razorpay")
 const connectDB = require('./src/config/db');
 const productRoutes = require("./src/routes/product.routes");
 const authRoutes = require("./src/routes/auth.routes");
-const cartRoutes = require("./src/routes/cartRoutes");
+const cartRoutes = require("./src/routes/cart.Routes");
 const orderRoutes = require("./src/routes/order.Routes")
-dotenv.config();
+
 const app = express();
 
 // middleware
